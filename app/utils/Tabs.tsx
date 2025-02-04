@@ -1,8 +1,11 @@
+import TestComponent from "app/components/Test";
+
 export const tabs = [
   {
     id: "all-customers",
     content: "All",
     panelId: "all-customers-content-one",
+    component: <TestComponent />,
   },
   {
     id: "accepts-marketing-1",
