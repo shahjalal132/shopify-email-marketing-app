@@ -9,13 +9,25 @@ import {
   TextField,
 } from "@shopify/polaris";
 import { useCallback, useState } from "react";
+import { Resend } from "resend";
+
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 type CreateCampaignFormProps = {
   activate: boolean;
   setActivate: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
-export const action: ActionFunction = async ({ request }) => {};
+export const action: ActionFunction = async ({ request }) => {
+  console.log("hit");
+
+  const { data, error } = await resend.emails.send({
+    from: "ffshahjalal@gmail.com",
+    to: "rjshahjalal132@gmail.com",
+    subject: "test",
+    html: "test",
+  });
+};
 
 const CreateCampaignForm: React.FC<CreateCampaignFormProps> = ({
   activate,
