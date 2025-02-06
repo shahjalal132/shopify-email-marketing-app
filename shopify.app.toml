@@ -1,7 +1,7 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
 client_id = "745883cdcaf79d7a78ee3b184b7e8eea"
-application_url = "https://dozens-information-rapids-cas.trycloudflare.com"
+application_url = "https://economics-score-evaluated-toronto.trycloudflare.com"
 embedded = true
 name = "marketing"
 handle = "marketing-26"
@@ -23,9 +23,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://dozens-information-rapids-cas.trycloudflare.com/auth/callback",
-  "https://dozens-information-rapids-cas.trycloudflare.com/auth/shopify/callback",
-  "https://dozens-information-rapids-cas.trycloudflare.com/api/auth/callback"
+  "https://economics-score-evaluated-toronto.trycloudflare.com/auth/callback",
+  "https://economics-score-evaluated-toronto.trycloudflare.com/auth/shopify/callback",
+  "https://economics-score-evaluated-toronto.trycloudflare.com/api/auth/callback"
 ]
 
 [pos]

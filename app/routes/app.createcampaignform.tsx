@@ -11,7 +11,7 @@ import {
 import { useCallback, useState } from "react";
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = new Resend("resend_api_key");
 
 type CreateCampaignFormProps = {
   activate: boolean;
